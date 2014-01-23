@@ -30,22 +30,22 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-		  //Person 1 put your implementation here
-			String result = "";
-			for (int i = 0; i < input.length(); i++) {
+	  //Person 1 put your implementation here
+        String result = "";
+        for (int i = 0; i < input.length(); i++) {
 		        char c = input.charAt(i);
 		        
-		        if (i == input.length() - 2) {
-		        	c = input.charAt(0);
-		        } else if (i == input.length() - 1) {
-		        	c = input.charAt(1);
-		        } else {
-		        	c = input.charAt(i + 2);
-		        }		        
-		        result = result + c;
-		      }			
+		    if (i == input.length() - 2) {
+		       	c = input.charAt(0);
+		    } else if (i == input.length() - 1) {
+		      	c = input.charAt(1);
+		    } else {
+		     	c = input.charAt(i + 2);
+		    }		        
+		    result = result + c;
+		}			
 			return result;
-		}
+	}
 	
 	/**
 	 * Return a string rep of this object
@@ -58,5 +58,4 @@ public class Person1 {
 	public String toString(String input) {
 	  return name + calc(input);
 	}
-
 }
