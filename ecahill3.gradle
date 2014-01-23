@@ -1,0 +1,5 @@
+//set jar as default task
+defaultTasks 'jar'
+
+//import java related tasks
+apply plugin: 'java'
