@@ -27,12 +27,11 @@ public class Person5 {
 	 * "g123bgt".
 	 *
 	 * @param input the string to be modified
-	 * @return the modified sting
+	 * @return the modified string
 	 */
 	private String calc(String input) {
-		String substring1 = input.substring(0,2);
-		String substring2 = input.substring(2,input.length());
-		return substring2 + substring1;
+	  //Person 5 put your implementation here
+	  return null;
 	}
 	
 	/**
