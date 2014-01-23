@@ -1,5 +1,8 @@
 package edu.gatech.oad.antlab.person;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 /**
  *  A simple class for person 2
  *  returns their name and a
@@ -17,7 +20,7 @@ public class Person2 {
 	 * @param pname the person's real name
 	 */
 	 public Person2(String pname) {
-	   name = pname;
+		 name = pname;
 	 }
 	/**
 	 * This method should take the string
@@ -30,8 +33,17 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
+		char[] letters = input.toCharArray();
+		ArrayList<Character> list = new ArrayList<Character>();	
+		String randomizedName = "";
+		for (int i=0; i<input.length(); i++) {
+			list.add(letters[i]);
+		}
+		Collections.shuffle(list);
+		for (int i=0; i<list.size(); i++) {
+			randomizedName = randomizedName + list.get(i);
+		}
+		return randomizedName;
 	}
 	/**
 	 * Return a string rep of this object
