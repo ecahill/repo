@@ -20,7 +20,7 @@ public class Person2 {
 	 * @param pname the person's real name
 	 */
 	 public Person2(String pname) {
-		 name = pname;
+		 name = pname; 
 	 }
 	/**
 	 * This method should take the string
