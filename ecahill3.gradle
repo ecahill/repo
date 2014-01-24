@@ -3,3 +3,9 @@ defaultTasks 'jar'
 
 //import java related tasks
 apply plugin: 'java'
+
+repositories {
+	maven {
+		url "http://github.com/ecahill/repository"
+	}
+}
