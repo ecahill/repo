@@ -4,8 +4,18 @@ defaultTasks 'jar'
 //import java related tasks
 apply plugin: 'java'
 
+//Set up some variables (properties)
+sourceCompatibility = 1.7
+version = '1.0'
+
+//Define the contents of the jar file
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version , 'Main-Class' : 'Foo'
+    }
+}
+
+//Set up a location of repositories so that any needed library dependencies can be downloaded
 repositories {
-	maven {
-		url "http://github.com/ecahill/repository"
-	}
+    mavenCentral()
 }
