@@ -11,11 +11,15 @@ version = '1.0'
 //Define the contents of the jar file
 jar {
     manifest {
-        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version , 'Main-Class' : 'Foo'
+        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version , 'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain', 'Class-Path' : '../../lib/resources.jar'
     }
 }
 
 //Set up a location of repositories so that any needed library dependencies can be downloaded
 repositories {
     mavenCentral()
+}
+
+dependencies {
+	compile files('lib/resources.jar')
 }
